@@ -24,5 +24,15 @@ namespace WinPolybar
         {
             InitializeComponent();
         }
+
+        private void BtnAdd_Click(object sender, RoutedEventArgs e)
+        {
+            Window barra = new Window();
+            barra.Width = 1000;
+            barra.Background = new SolidColorBrush(Color.FromArgb(16, 16, 16, 16));
+            barra.Height = 40;
+            barra.Visibility = Visibility.Visible;
+            barra.Show();
+        }
     }
 }

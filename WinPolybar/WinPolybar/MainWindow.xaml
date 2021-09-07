@@ -5,8 +5,20 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WinPolybar"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-
-    </Grid>
+        Title="WinPolybar" Height="180" Width="260">
+    <StackPanel>
+        <Menu>
+            <MenuItem Header="Archivo">
+                <MenuItem Header="Cerrar"></MenuItem>
+                <MenuItem Header="Salir"></MenuItem>
+            </MenuItem>
+            <MenuItem Header="Ayuda">
+                <MenuItem Header="Ir a la documentación"></MenuItem>
+                <MenuItem Header="Acerca De"></MenuItem>
+            </MenuItem>
+        </Menu>
+        <GroupBox Header="Area de trabajo" Height="144" Margin="5,5,5,5">
+            <Button Name="BtnAdd" Content="+Add" Width="50" Click="BtnAdd_Click" HorizontalAlignment="Left" VerticalAlignment="Top"  Margin="3,3,3,3" Height="22" />
+        </GroupBox>
+    </StackPanel>
 </Window>
